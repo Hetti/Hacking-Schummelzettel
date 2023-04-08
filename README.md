@@ -9,14 +9,14 @@ Greift ausschließlich Systeme an für die ihr eine Berechtigung habt (schriftli
 Angriff auf fremde Systeme ist *illegal* und kann im schlimmsten Fall zu Gefängnisstrafen führen.
 
 # Seite für Challenge Boxen   
-TryHackMe (THM): https://tryhackme.com (meine Empfehlung  um in die IT Security Materie reinzukommen, man wird bei den Basics an der Hand genommen beim Lernen und Üben!)
-HackTheBox (HTB): https://www.hackthebox.com
+* TryHackMe (THM): https://tryhackme.com (meine Empfehlung  um in die IT Security Materie reinzukommen, man wird bei den Basics an der Hand genommen beim Lernen und Üben!)  
+* HackTheBox (HTB): https://www.hackthebox.com
 
 # TryHackMe OpenVPN Guide  
 TryHackMe OpenVPN Guide:
 IP rausfinden nach OpenVPN Verbindung:
 
-Nach folgender Zeile im Verbindungslog suchen welche net_addr_v4_add beinhaltet:
+Nach folgender Zeile im Verbindungslog suchen welche net_addr_v4_add beinhaltet:  
 `2022-12-29 06:17:28 net_addr_v4_add: 13.37.40.4/16 dev tun0`
 
 Die IP Adresse vor dem /16 ist eure zugewiesene IP Adresse im Netzwerk von THM. Also in dem Fall --> 13.37.40.4
@@ -38,11 +38,11 @@ OWASP Cheat Sheet Series: https://cheatsheetseries.owasp.org/index.html
 GTFO Bins: https://gtfobins.github.io/
 
 # Tool Empfehlungen   
-Burp Suite Community Edition: https://portswigger.net/burp/communitydownload
-Üblicherweise über euren Packetmanager auf Linux installierbar :-) 
+Burp Suite Community Edition: https://portswigger.net/burp/communitydownload  
+Üblicherweise über euren Packetmanager auf Linux installierbar :-)  
 Ist in Kali Linux auch dabei.
 
-man - Man Pages - Sammlung von Hilfs und Dokumentationsseiten; Aufruf: man <programmname>
+man - Man Pages - Sammlung von Hilfs und Dokumentationsseiten; Aufruf: `man <programmname>`  
 Beispiel: `man nmap`
 
 nmap - Port Scanning Tool mit vielen Funktionalitäten
@@ -63,5 +63,5 @@ Scripte für automatisierte Reconnaissance am System (Hacktricks Mensch): https:
 * Binaries mit SUID Bit gesetzt (Siehe GTFO Bins)
 
 SUID Binaries suchen mittels find: `find <VERZEICHNIS> -perm -4000`  
-Beispiel: `find /bin -perm -4000 `
+Beispiel: `find /bin -perm -4000 `  
 Siehe auch: https://linux-audit.com/finding-setuid-binaries-on-linux-and-bsd/
